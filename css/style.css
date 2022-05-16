@@ -1,3 +1,4 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
@@ -9,4 +10,210 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
+    color: grey;
+}
+
+/* COMMON */
+.white{
+    color: white;
+}
+.flex{
+    display: flex;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+
+/* desktop first */
+.content-wrapped{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+.aside-content{
+    background-color: black;
+    width: 210px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.main-content{
+    background-color: #141922;
+    width: calc(100% - 210px);
+    overflow-y: auto;
+    padding: 10px;
+    padding-top: 80px;
+}
+
+footer{
+    height: 70px;
+    background-color: #282828;
+}
+
+.upgrade-btn{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 70px;
+    width: calc(100% - 210px);
+    text-align: right;
+    line-height: 70px;
+    z-index: 10;
+}
+.upgrade-btn a{
+    border: 1px solid white;
+    padding: 6px 25px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-right: 7px;
+}
+
+/* PARTE SINISTRA */
+.logo-xs{
+    display: none;
+    padding-left: 14px;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+.cerca, .libreria{
+    padding-left: 15px;
+}
+.home, .cerca, .libreria{
+    font-size: 12px;
+}
+.logo{
+    width: 130px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.aside-content .icon{
+    font-size: 17px;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+
+/* funzioni */
+.home{
+    border-left: 3px solid #7cb630;
+    line-height: 5px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.home .icon{
+    padding-left: 13px;
+}
+.cerca, .libreria{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+/* playlist */
+.crea-playlist .icon{
+    font-size: 35px;
+    vertical-align: middle;
+}
+.playlist{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.playlist *{
+    padding-bottom: 10px;
+}
+.playlist h4{
+    font-size: 14px;
+    padding-bottom: 0;
+}
+.playlist li{
+    font-size: 12px;
+}
+.crea-playlist{
+    font-size: 14px;
+}
+
+/* utente */
+.utente{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    font-size: 12px;
+}
+.linea{
+    height: 1px;
+    width: 180px;
+    background-color: grey;
+}
+.nome-utente{
+    padding-bottom: 8px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.installa{
+    margin-bottom: 10px;
+}
+.installa .icon{
+    font-size: 10px;
+    padding-left: 4px;
+}
+
+
+/* TABLET*/
+@media screen and (max-width: 1100px) {
+    
+}
+
+
+/* MOBILE*/
+@media screen and (max-width: 700px) {
+    
+}
+
+
+/* XS*/
+@media screen and (max-width: 600px) {
+    /* parte sinstra */
+    .main-content{
+        width: calc(100% - 45px);
+    }
+    .upgrade-btn{
+        width: calc(100% - 45px);
+    }
+    .aside-content{
+        width: 45px;
+    }
+    .logo-xs{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .home{
+        border: 0;
+    }
+    .home .icon{
+        color: grey;
+    }
+    .text{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .linea{
+        display: none;
+    }
 }
