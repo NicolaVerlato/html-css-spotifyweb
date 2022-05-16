@@ -170,20 +170,133 @@ footer{
     padding-left: 4px;
 }
 
+/* PARTE DESTRA */
+
+/* categorie */
+.categorie .flex{
+    justify-content: center;
+}
+.categorie li{
+    padding: 0 10px;
+    font-size: 12px;
+}
+.linea-verde{
+    width: 30px;
+    height: 2px;
+    background-color: #7cb630;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+h2{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.recently .flex{
+    justify-content: space-between;
+}
+.col{
+    width: calc((100% / 6) - 10px);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.card h4{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.artist{
+    font-size: 12px;
+}
+
+/* for you */
+.for-you h2{
+    padding-bottom: 7px;
+}
+.for-you .col{
+    margin-right: 13px;
+    margin-top: 25px;
+}
+
+/* Più popolari */
+.most-popular h2{
+    padding-bottom: 7px;
+}
+.most-popular .col{
+    margin-right: 13px;
+    margin-top: 25px;
+}
+.most-popular img{
+    border-radius: 50%;
+}
+
 
 /* TABLET*/
 @media screen and (max-width: 1100px) {
+    /* parte destra */
+    .categorie{
+        height: 65px;
+    }
+    .categorie .flex{
+        flex-wrap: wrap;
+    }
+    .categorie li{
+        width: calc(100% / 5);
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    /* ascoltati di recente */
+    .recently .flex{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .col{
+        width: calc(100% / 4);
+        padding-right: 15px;
+    }
+
+    /* for you */
+    .for-you .col{
+        margin-right: 0;
+    }
     
 }
 
 
 /* MOBILE*/
 @media screen and (max-width: 700px) {
-    
+    /* parte destra */
+    .categorie li{
+        width: calc(100% / 3);
+    }
+
+    /* ascoltati di recente */
+    .col{
+        width: calc(100% / 2);
+    }
+
+    /* for you */
+    .for-you .flex{
+        justify-content: space-between;
+    }
+    .for-you .col{
+        width: calc(100% / 2);
+        margin-right: 0;
+    }
+
+    /* più popolari */
+    .most-popular .flex{
+        justify-content: space-between;
+    }
+    .most-popular .col{
+        width: calc(100% / 2);
+        margin-right: 0;
+    }
 }
 
 
-/* XS*/
+/* XS */
 @media screen and (max-width: 600px) {
     /* parte sinstra */
     .main-content{
@@ -215,5 +328,11 @@ footer{
     }
     .linea{
         display: none;
+    }
+
+    /* parte destra */
+    /* categorie */
+    .categorie li{
+        width: calc(100% / 4);
     }
 }
