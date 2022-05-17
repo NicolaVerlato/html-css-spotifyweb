@@ -374,11 +374,32 @@ footer .icon:hover{
 .footer-right .linea{
     width: 120px;
     height: 3px;
+    border-radius: 10px;
+    position: relative;
 }
 .footer-right .linea .white{
     background-color: white;
-    width: 50px;
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
 }
+.bullet{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    left: 27px;
+    display: none;
+}
+.footer-right .linea:hover .white{
+    background-color: #7cb630;
+}
+.footer-right .linea:hover .bullet{
+    display: block;
+}
+
 
 /* TABLET*/
 @media screen and (max-width: 1100px) {
