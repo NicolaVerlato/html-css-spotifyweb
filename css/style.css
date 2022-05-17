@@ -219,11 +219,15 @@ footer{
     padding: 0 10px;
     font-size: 12px;
 }
+.flex-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .linea-verde{
-    width: 30px;
+    width: 35px;
     height: 2px;
     background-color: #7cb630;
-    margin-left: 20px;
     margin-top: 2px;
 }
 h2{
