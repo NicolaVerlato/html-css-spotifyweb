@@ -75,10 +75,11 @@ footer{
 }
 .upgrade-btn a{
     border: 1px solid white;
-    padding: 6px 25px;
+    padding: 7px 25px;
     border-radius: 20px;
     font-size: 11px;
     margin-right: 7px;
+    font-weight: 600;
 }
 
 /* PARTE SINISTRA */
@@ -107,6 +108,7 @@ footer{
 .funzioni img{
     display: inline;
     width: 20px;
+    opacity: 0.8;
 }
 .home{
     border-left: 3px solid #7cb630;
@@ -121,12 +123,28 @@ footer{
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
+} 
+.libreria :hover a{
+    color: white;
+}
+.cerca:hover a{
+    color: white;
+}
+.home:hover img{
+    opacity: 1;
+}
+.cerca:hover img{
+    opacity: 1;
+}
+.libreria:hover img{
+    opacity: 1;
 }
 
 /* playlist */
 .crea-playlist .icon{
     font-size: 35px;
     vertical-align: middle;
+    padding-right: 0;
 }
 .playlist{
     padding-left: 15px;
@@ -145,6 +163,13 @@ footer{
 .crea-playlist{
     font-size: 14px;
 }
+.creazione-playlist:hover{
+    color: white;
+}
+.playlist a:hover{
+    color: white;
+}
+
 
 /* utente */
 .utente{
@@ -180,6 +205,13 @@ footer{
 .installa .icon img{
     width: 14px;
     display: inline;
+    opacity: 0.7;
+}
+.installa:hover img{
+    opacity: 1;
+}
+.installa:hover{
+    color: white;
 }
 
 
@@ -187,6 +219,10 @@ footer{
 /* categorie */
 .categorie .flex{
     justify-content: center;
+}
+.categorie a{
+    font-weight: 600;
+    font-size: 14px;
 }
 .categorie li{
     padding: 0 10px;
@@ -203,8 +239,31 @@ h2{
     padding-top: 30px;
     padding-bottom: 25px;
 }
+.categorie a:hover{
+    color: white;
+}
+
+/* ascoltati di recente */
 .recently .flex{
     justify-content: space-between;
+}
+.card .img{
+    position: relative;
+}
+.card .img .play{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.card .img img:hover{
+    opacity: 0.5;
+}
+.card .img:hover .play{
+    display: block;
 }
 .col{
     width: calc((100% / 6) - 10px);
