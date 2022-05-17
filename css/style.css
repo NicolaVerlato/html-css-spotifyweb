@@ -83,10 +83,7 @@ footer{
 /* PARTE SINISTRA */
 .logo-xs{
     display: none;
-    padding-left: 14px;
-    padding-top: 5px;
     color: white;
-    font-size: 20px;
 }
 .cerca, .libreria{
     padding-left: 15px;
@@ -101,15 +98,17 @@ footer{
     padding-bottom: 15px;
 }
 .aside-content .icon{
-    font-size: 17px;
     padding-right: 3px;
     vertical-align: middle;
 }
 
 /* funzioni */
+.funzioni img{
+    display: inline;
+    width: 20px;
+}
 .home{
     border-left: 3px solid #7cb630;
-    line-height: 5px;
     font-weight: 600;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -162,12 +161,23 @@ footer{
     font-weight: 600;
     margin-top: 10px;
 }
+.nome-utente .text{
+    font-size: 14px;
+}
+.nome-utente .icon img{
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    display: inline;
+    background-color: grey;
+    border-radius: 50%;
+}
 .installa{
     margin-bottom: 10px;
 }
-.installa .icon{
-    font-size: 10px;
-    padding-left: 4px;
+.installa .icon img{
+    width: 14px;
+    display: inline;
 }
 
 /* PARTE DESTRA */
@@ -310,6 +320,10 @@ h2{
     }
     .logo-xs{
         display: block;
+        padding-top: 5px;
+        padding-left: 9px;
+        padding-bottom: 10px;
+        width: 37px;
     }
     .logo{
         display: none;
