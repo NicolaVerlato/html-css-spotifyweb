@@ -344,7 +344,8 @@ footer .icon:hover{
     padding: 0 10px;
 }
 .footer-center .top{
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    padding-bottom: 5px;
 }
 .top .play{
     font-size: 27px;
@@ -354,16 +355,38 @@ footer .icon:hover{
 .durata{
     font-size: 11px;
     font-weight: 600;
+    margin: 0 15px;
 }
-.bottom div{
-    display: inline;
+.bottom .flex{
+    flex-direction: row;
 }
 .bottom .linea{
-    width: 30px;
-    height: 2px;
+    width: 300px;
+    height: 3px;
+    border-radius: 10px;
+    position: relative;
+}
+.bottom .linea .white{
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
+}
+.bullet{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    left: 27%;
+    display: none;
+}
+.bottom .linea:hover .white{
     background-color: #7cb630;
-    margin-left: 20px;
-    margin-top: 2px;
+}
+.bottom .linea:hover .bullet{
+    display: block;
 }
 
 /* footer-right */
@@ -382,16 +405,6 @@ footer .icon:hover{
     border-radius: 10px;
     width: 30%;
     height: 100%;
-}
-.bullet{
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    top: -5px;
-    left: 27px;
-    display: none;
 }
 .footer-right .linea:hover .white{
     background-color: #7cb630;
