@@ -21,10 +21,6 @@ img{
     width: 100%;
     display: block;
 }
-.container{
-    width: 90%;
-    margin: 0 auto;
-}
 a{
     text-decoration: none;
     color: inherit;
@@ -39,13 +35,6 @@ ul{
     width: 100%;
     height: calc(100vh - 70px);
 }
-.aside-content{
-    background-color: black;
-    width: 210px;
-    overflow-y: hidden;
-    position: relative;
-}
-
 .main-content{
     background-color: #141922;
     width: calc(100% - 210px);
@@ -53,12 +42,10 @@ ul{
     padding: 10px;
     padding-top: 80px;
 }
-
 footer{
     height: 70px;
     background-color: #282828;
 }
-
 .upgrade-btn{
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -80,6 +67,13 @@ footer{
 }
 
 /* PARTE SINISTRA */
+.aside-content{
+    background-color: black;
+    width: 210px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
 .logo-xs{
     display: none;
     color: white;
@@ -146,6 +140,8 @@ footer{
 .playlist{
     padding-left: 15px;
     padding-top: 10px;
+    flex-grow: 1;
+    height: 40%;
 }
 .playlist *{
     padding-bottom: 10px;
@@ -167,13 +163,11 @@ footer{
     color: white;
 }
 
-
 /* utente */
 .utente{
-    position: absolute;
-    bottom: 0;
-    left: 15px;
+    padding-left: 15px;
     font-size: 12px;
+    background-color: black;
 }
 .linea{
     height: 1px;
@@ -341,9 +335,16 @@ footer .icon:hover{
 }
 
 /* footer-center */
+.footer-center .flex{
+    flex-direction: column;
+    justify-content: center;
+}
 .footer-center .top a{
     vertical-align: middle;
     padding: 0 10px;
+}
+.footer-center .top{
+    flex-grow: 1;
 }
 .top .play{
     font-size: 27px;
@@ -390,7 +391,7 @@ footer .icon:hover{
     }
     .categorie li{
         width: calc(100% / 5);
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         text-align: center;
     }
 
@@ -408,6 +409,11 @@ footer .icon:hover{
     .for-you .col{
         margin-right: 0;
     }
+
+    /* più popolari */
+    .most-popular .col{
+        margin-right: 0;
+    }
     
 }
 
@@ -420,8 +426,13 @@ footer .icon:hover{
     }
 
     /* ascoltati di recente */
+    .recently .flex{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .col{
-        width: calc(100% / 2);
+        width: calc((100% / 2) - 5px);
+        padding-right: 0;
     }
 
     /* for you */
@@ -429,8 +440,7 @@ footer .icon:hover{
         justify-content: space-between;
     }
     .for-you .col{
-        width: calc(100% / 2);
-        margin-right: 0;
+        width: calc((100% / 2) - 5px);
     }
 
     /* più popolari */
@@ -438,8 +448,16 @@ footer .icon:hover{
         justify-content: space-between;
     }
     .most-popular .col{
-        width: calc(100% / 2);
-        margin-right: 0;
+        width: calc((100% / 2) - 5px);
+    }
+
+    /* FOOTER */
+    /* footer-left */
+    .artista{
+        margin-right: 20px;
+    }
+    .icons .flex{
+        flex-direction: column;
     }
 }
 
@@ -466,13 +484,16 @@ footer .icon:hover{
     .logo{
         display: none;
     }
+    .funzioni{
+        flex-grow: 1;
+    }
     .home{
         border: 0;
     }
     .home .icon{
         color: grey;
     }
-    .text{
+    .aside-content .text{
         display: none;
     }
     .playlist{
@@ -481,13 +502,29 @@ footer .icon:hover{
     .linea{
         display: none;
     }
+    
 
     /* parte destra */
     /* categorie */
     .categorie li{
         width: calc(100% / 4);
+        padding: 0 10px;
     }
     .recently h2{
         font-size: 20px;
+    }
+
+    /* FOOTER */
+    /* footer-center */
+    .footer-center .top a{
+        padding: 0 5px;
+    }
+    /* footer-right */
+    .footer-right a{
+        margin-right: 7px;
+    }
+    .footer-right .linea{
+        display: block;
+        width: 70px;
     }
 }
