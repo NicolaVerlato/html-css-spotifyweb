@@ -65,6 +65,10 @@ footer{
     margin-right: 7px;
     font-weight: 600;
 }
+.scale:hover{
+    font-size: 13px;
+}
+
 
 /* PARTE SINISTRA */
 .aside-content{
@@ -348,7 +352,6 @@ footer .icon:hover{
     padding: 0 10px;
 }
 .footer-center .top{
-    /* flex-grow: 1; */
     padding-bottom: 5px;
 }
 .top .play{
@@ -391,6 +394,9 @@ footer .icon:hover{
 }
 .bottom .linea:hover .bullet{
     display: block;
+}
+.footer-center .play i:hover{
+    transform: scale(1.2);
 }
 
 /* footer-right */
