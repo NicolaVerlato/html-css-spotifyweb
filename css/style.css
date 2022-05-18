@@ -53,18 +53,21 @@ ul{
     height: 70px;
     width: calc(100% - 210px);
     text-align: right;
-    line-height: 70px;
     z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .upgrade-btn a{
     border: 1px solid white;
     padding: 7px 25px;
     border-radius: 20px;
     font-size: 11px;
-    margin-right: 7px;
+    margin-right: 16px;
+    display: inline-block;
 }
 .scale:hover{
-    font-size: 13px;
+    transform: scale(1.1);
 }
 
 /* PARTE SINISTRA */
@@ -584,5 +587,8 @@ footer .icon:hover{
     .footer-right .linea{
         display: block;
         width: 70px;
+    }
+    .footer-right .bullet{
+        left: 16px;
     }
 }
