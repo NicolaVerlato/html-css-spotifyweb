@@ -145,17 +145,18 @@ footer{
     padding-left: 15px;
     padding-top: 10px;
     flex-grow: 1;
-    height: 40%;
-}
-.playlist *{
-    padding-bottom: 10px;
 }
 .playlist h4{
     font-size: 14px;
     padding-bottom: 0;
 }
+.playlist-list{
+    overflow-y: auto;
+    padding-top: 10px;
+}
 .playlist li{
     font-size: 12px;
+    padding-bottom: 10px;
 }
 .crea-playlist{
     font-size: 14px;
@@ -258,10 +259,10 @@ h2{
     transform: translate(-50%, -50%);
     display: none;
 }
-.card .img img:hover{
+.card:hover img{
     filter: brightness(50%);
 }
-.card .img:hover .play{
+.card:hover .play{
     display: block;
 }
 .col{
@@ -343,6 +344,9 @@ footer .icon:hover{
 }
 
 /* footer-center */
+.footer-center{
+    width: 40%;
+}
 .footer-center .flex{
     flex-direction: column;
     justify-content: center;
@@ -364,11 +368,14 @@ footer .icon:hover{
     font-weight: 600;
     margin: 0 15px;
 }
+.bottom{
+    width: 100%;
+}
 .bottom .flex{
     flex-direction: row;
 }
 .bottom .linea{
-    width: 300px;
+    width: 100%;
     height: 3px;
     border-radius: 10px;
     position: relative;
@@ -386,7 +393,7 @@ footer .icon:hover{
     background-color: white;
     position: absolute;
     top: -5px;
-    left: 27%;
+    left: 29%;
     display: none;
 }
 .bottom .linea:hover .white{
@@ -460,14 +467,7 @@ footer .icon:hover{
     /* più popolari */
     .most-popular .col{
         margin-right: 0;
-    }
-
-    /* FOOTER */
-    /* Footer-center */
-    .bottom .linea{
-        width: 180px;
-    }
-    
+    }    
 }
 
 
@@ -511,10 +511,6 @@ footer .icon:hover{
     }
     .icons .flex{
         flex-direction: column;
-    }
-    /* Footer-center */
-    .bottom .linea{
-        width: 170px;
     }
     /* footer right */
     .footer-right a{
@@ -579,9 +575,6 @@ footer .icon:hover{
     /* footer-center */
     .footer-center .top a{
         padding: 0 5px;
-    }
-    .bottom .linea{
-        width: 100px;
     }
     /* footer-right */
     .footer-right a{
